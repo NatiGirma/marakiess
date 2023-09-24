@@ -1,0 +1,65 @@
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #0A2E59;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo h5 {
+    margin: 0px 0px 0px 10px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    margin-right: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .burger {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        opacity: 0;
+        height: calc(100vh - 60px);
+        background-color: #0A2E59;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 60px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .logo h5 {
+        display: none;
+    }
+}
+
+.open-menu {
+    width: 100%;
+    opacity: 1;
+}

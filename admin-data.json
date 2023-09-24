@@ -1,0 +1,16 @@
+{
+    "employees": [
+        {"first_name": "Bill", "last_name": "Gates", "work_email": "bill@microsoft.com", "work_phone": "09876", "department": "IT Department", "nationality": "Ethiopian"},
+        {"first_name": "Bill", "last_name": "Gates", "work_email": "bill@microsoft.com", "work_phone": "09876", "department": "IT Department", "nationality": "Ethiopian"},
+        {"first_name": "Bill", "last_name": "Gates", "work_email": "bill@microsoft.com", "work_phone": "09876", "department": "IT Department", "nationality": "Ethiopian"},
+        {"first_name": "Bill", "last_name": "Gates", "work_email": "bill@microsoft.com", "work_phone": "09876", "department": "IT Department", "nationality": "Ethiopian"},
+        {"first_name": "Bill", "last_name": "Gates", "work_email": "bill@microsoft.com", "work_phone": "09876", "department": "IT Department", "nationality": "Ethiopian"}
+    ],
+    "leave_requests": [
+        {"employee_name": "Bill Gates", "type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "pending"},
+        {"employee_name": "Bill Gates", "type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "pending"},
+        {"employee_name": "Bill Gates", "type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "active"},
+        {"employee_name": "Bill Gates", "type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "active"},
+        {"employee_name": "Bill Gates", "type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "active"}
+    ]
+}

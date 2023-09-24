@@ -1,0 +1,92 @@
+<app-header></app-header>
+
+<div class="w-100 d-flex align-items-center justify-content-center flex-column">
+  <img src="../../../assets/avatar.jpg" class="avatar mt-5" />
+  <h4 class="text-center mt-2">{{ first_name + " " + last_name }}</h4>
+  <p>{{ work_email }}</p>
+</div>
+
+<div class="container">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>General</button>
+      <ng-template ngbNavContent>
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <u><h3>Demographics</h3></u>
+            <p>First Name: {{ first_name }}</p>
+            <p>Last Name: {{ last_name }}</p>
+            <p>Title: {{ title }}</p>
+          </div>
+          <div class="col-md-6 mt-4">
+            <u><h3>Contacts</h3></u>
+            <p>Work Email: {{ work_email }}</p>
+            <p>Work Phone: {{ work_phone }}</p>
+            <p>Work Mobile: {{ work_mobile }}</p>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Work Information</button>
+      <ng-template ngbNavContent>
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <u><h3>HR Basics</h3></u>
+            <p>Department: {{ department }}</p>
+            <p>Job Position: {{ job_position }}</p>
+            <p>Job Category: {{ job_category }}</p>
+          </div>
+          <div class="col-md-6 mt-4">
+            <u><h3>Qualifications</h3></u>
+            <p>Qualification Level: {{ qualification_level }}</p>
+            <p>Qualification Description: {{ qualification_description }}</p>
+            <p>University: {{ university }}</p>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <button ngbNavLink>Private Information</button>
+      <ng-template ngbNavContent>
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <u><h3>HR Basics</h3></u>
+            <p>Gender: {{ gender }}</p>
+            <p>Date of Birth: {{ dob }}</p>
+            <p>Nationality: {{ nationality }}</p>
+            <p>Marital Status: {{ marital_status }}</p>
+          </div>
+          <div class="col-md-6 mt-4">
+            <u><h3>Contacts</h3></u>
+            <p>Address: {{ address }}</p>
+            <p>Private Email: {{ private_email }}</p>
+            <p>Private Phone: {{ private_phone }}</p>
+            <p>Postal Address: {{ postal_address }}</p>
+          </div>
+          <div class="col-md-6 mt-4">
+            <u><h3>Emergency Contacts</h3></u>
+            <p>Emergency Email: {{ emergency_email }}</p>
+            <p>Emergency Phone: {{ emergency_phone }}</p>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="4">
+      <button ngbNavLink>Medical Insurance</button>
+      <ng-template ngbNavContent>
+        <div class="col-md-6 mt-4">
+          <u><h3>Medical Insurance</h3></u>
+          <p>Insurance Company: {{ insurance_company }}</p>
+          <p>Insurance ID: {{ insurance_id }}</p>
+          <p>From: {{ from }}</p>
+          <p>To: {{ to }}</p>
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
+
+<app-footer></app-footer>

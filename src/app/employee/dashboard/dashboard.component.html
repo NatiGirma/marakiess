@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="whole-container container">
+  <div class="row justify-content-around">
+    <a
+      routerLink="/employee/personal-information"
+      class="col-md-3 mt-5 dashboard-card d-flex align-items-center justify-content-center flex-column"
+    >
+      <img src="../../../assets/personal-information.png" />
+      <p>My Personal Information</p>
+    </a>
+
+    <a
+      routerLink="/employee/leave-requests"
+      class="col-md-3 mt-5 dashboard-card d-flex align-items-center justify-content-center flex-column"
+    >
+      <img src="../../../assets/leave.png" />
+      <p>Leave Requests</p>
+    </a>
+
+    <a
+      routerLink="/employee/salary"
+      class="col-md-3 mt-5 dashboard-card d-flex align-items-center justify-content-center flex-column"
+    >
+      <img src="../../../assets/salary.png" />
+      <p>Payroll</p>
+    </a>
+  </div>
+
+  <div class="row justify-content-around">
+    <a
+      routerLink="/employee/auth/login"
+      class="col-md-3 mt-5 dashboard-card d-flex align-items-center justify-content-center flex-column"
+    >
+      <img src="../../../assets/logout.png" />
+      <p>Logout</p>
+    </a>
+  </div>
+</div>
+
+<app-footer></app-footer>

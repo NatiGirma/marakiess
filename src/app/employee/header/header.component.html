@@ -1,0 +1,22 @@
+<header class="shadow shadow-sm">
+  <div
+    class="container h-100 d-flex align-items-center justify-content-between"
+  >
+    <a
+      routerLink="/employee/dashboard"
+      class="d-flex logo h-100 align-items-center justify-content-center"
+    >
+      <img src="../../../assets/logo-white.png" alt="Maraki Logo" />
+      <h5>Maraki ESS</h5>
+    </a>
+    <div class="menu" #menu>
+      <span class="name">Welcome, {{ name }}</span>
+      <button class="btn btn-sm btn-danger" (click)="logout()">Logout</button>
+    </div>
+    <div class="burger" (click)="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div class="container">
+  <h3 class="text-center mt-5">Payroll History</h3>
+</div>
+
+<div class="container mt-5">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Check Number</th>
+        <th scope="col">Gross Pay</th>
+        <th scope="col">Taxes</th>
+        <th scope="col">Deductions</th>
+        <th scope="col">Net Pay</th>
+        <th scope="col">Payment Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let payment of payments; index as i">
+        <td>{{ payment.check_number }}</td>
+        <td>{{ payment.gross_pay }}</td>
+        <td>{{ payment.taxes }}</td>
+        <td>{{ payment.deductions }}</td>
+        <td>{{ payment.net_pay }}</td>
+        <td>{{ payment.payment_date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

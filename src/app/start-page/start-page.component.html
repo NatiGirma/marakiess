@@ -1,0 +1,38 @@
+<div class="w-100 row justify-content-center">
+  <div
+    class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+  >
+    <img
+      src="../../../../assets/logo.png"
+      alt="Maraki Logo"
+      class="logo mb-3"
+    />
+
+    <h3 class="text-center mb-3">
+      Welcome To Maraki Employee Self Service Portal
+    </h3>
+
+    <h3 class="bg-dark text-light w-100 text-center mb-3">
+      Please Select User Type
+    </h3>
+
+    <div class="row w-100 justify-content-center">
+      <a
+        routerLink="/employee/auth/login"
+        class="col-md-3 mt-5 user-type d-flex align-items-center justify-content-center flex-column"
+        style="margin-right: 10px"
+      >
+        <img src="../../assets/personal-information.png" />
+        <p>Employee</p>
+      </a>
+      <a
+        routerLink="/admin/auth/login"
+        style="margin-left: 10px"
+        class="col-md-3 mt-5 user-type d-flex align-items-center justify-content-center flex-column"
+      >
+        <img src="../../assets/admin.png" />
+        <p>Admin</p>
+      </a>
+    </div>
+  </div>
+</div>

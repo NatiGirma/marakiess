@@ -1,0 +1,25 @@
+.whole-container {
+    min-width: 100%;
+    min-height: calc(100vh - 260px);
+}
+
+.dashboard-card {
+    border-radius: 5px;
+    height: 150px;
+    background-color: #0A2E59;
+    transition: 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dashboard-card img {
+    width: 70px;
+    height: 70px;
+}
+
+.dashboard-card p {
+    margin-top: 20px;
+    color: #FFF;
+}

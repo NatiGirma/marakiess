@@ -1,0 +1,173 @@
+<app-header></app-header>
+
+<div class="admin-controller">
+  <div class="container mt-5">
+    <h1 class="text-center">Employees</h1>
+
+    <p class="text-center">
+      <button class="btn btn-custom mt-1" (click)="open(content)">
+        New Employee
+      </button>
+    </p>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"></h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="first_name" class="form-label">First Name</label>
+        <input
+          type="first_name"
+          name="first_name"
+          id="first_name"
+          class="form-control"
+          placeholder="First Name..."
+          [(ngModel)]="first_name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="last_name" class="form-label">Last Name</label>
+        <input
+          type="last_name"
+          name="last_name"
+          id="last_name"
+          class="form-control"
+          placeholder="Last Name..."
+          [(ngModel)]="last_name"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="work_phone" class="form-label">Work Phone</label>
+        <input
+          type="work_phone"
+          name="work_phone"
+          id="work_phone"
+          class="form-control"
+          placeholder="Work Phone..."
+          [(ngModel)]="work_phone"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="work_email" class="form-label">Work Email</label>
+        <input
+          type="work_email"
+          name="work_email"
+          id="work_email"
+          class="form-control"
+          placeholder="Work Email..."
+          [(ngModel)]="work_email"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="department" class="form-label">Department</label>
+        <input
+          type="department"
+          name="department"
+          id="department"
+          class="form-control"
+          placeholder="Department..."
+          [(ngModel)]="department"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="nationality" class="form-label">Nationality</label>
+        <input
+          type="nationality"
+          name="nationality"
+          id="nationality"
+          class="form-control"
+          placeholder="Nationality..."
+          [(ngModel)]="nationality"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input
+          type="address"
+          name="address"
+          id="address"
+          class="form-control"
+          placeholder="Address..."
+          [(ngModel)]="address"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="emergency_phone" class="form-label">Emergency Phone</label>
+        <input
+          type="emergency_phone"
+          name="emergency_phone"
+          id="emergency_phone"
+          class="form-control"
+          placeholder="Emergency Phone..."
+          [(ngModel)]="emergency_phone"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="emergency_email" class="form-label">Emergency Email</label>
+        <input
+          type="emergency_email"
+          name="emergency_email"
+          id="emergency_email"
+          class="form-control"
+          placeholder="Emergency Email..."
+          [(ngModel)]="emergency_email"
+        />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="submitCreateEmployee()"
+    >
+      Submit
+    </button>
+  </div>
+</ng-template>
+
+<div class="container mt-5">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Work Email</th>
+        <th scope="col">Work Phone</th>
+        <th scope="col">Department</th>
+        <th scope="col">Nationality</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees; index as i">
+        <td>{{ employee.first_name }}</td>
+        <td>{{ employee.last_name }}</td>
+        <td>{{ employee.work_email }}</td>
+        <td>{{ employee.work_phone }}</td>
+        <td>{{ employee.department }}</td>
+        <td>{{ employee.nationality }}</td>
+        <td><button class="btn btn-sm btn-danger">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

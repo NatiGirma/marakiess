@@ -1,0 +1,46 @@
+{
+    "first_name": "Yishak",
+    "last_name": "Abraham",
+    "title": "Mr",
+    "work_phone": "0110000000",
+    "work_mobile": "0944038276",
+    "work_email": "yishakwork@gmail.com",
+    "avatar": "./assets/avatar.jpg",
+    "department": "Information Technology",
+    "job_position": "IT Innovation Management",
+    "job_category": "Support Staff",
+    "qualification_level": "Bachelor",
+    "qualification_description": "",
+    "university": "Harvard",
+    "gender": "male",
+    "dob": "1983-11-13",
+    "nationality": "1983-11-13",
+    "marital_status": "married",
+    "address": "",
+    "private_email": "proyishak@gmail.com",
+    "private_phone": "0968412652",
+    "postal_address": "",
+    "emergency_phone": "12345678",
+    "emergency_email": "1234@1234.123",
+    "insurance_company": "",
+    "insurance_id": "",
+    "from": "",
+    "to": "",
+
+    "leave_requests": [
+        {"type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "pending"},
+        {"type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "pending"},
+        {"type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "active"},
+        {"type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "active"},
+        {"type": "Leave With Out Pay", "description": "No Description", "start_date": "", "end_date": "", "status": "active"}
+    ],
+
+    "payrolls": [
+        { "check_number": "156", "gross_pay": "640.00", "taxes": "94.37", "deductions": "186.64", "net_pay": "359.09", "payment_date": "07/05/2023" },
+        { "check_number": "156", "gross_pay": "640.00", "taxes": "94.37", "deductions": "186.64", "net_pay": "359.09", "payment_date": "07/05/2023" },
+        { "check_number": "156", "gross_pay": "640.00", "taxes": "94.37", "deductions": "186.64", "net_pay": "359.09", "payment_date": "07/05/2023" },
+        { "check_number": "156", "gross_pay": "640.00", "taxes": "94.37", "deductions": "186.64", "net_pay": "359.09", "payment_date": "07/05/2023" },
+        { "check_number": "156", "gross_pay": "640.00", "taxes": "94.37", "deductions": "186.64", "net_pay": "359.09", "payment_date": "07/05/2023" },
+        { "check_number": "156", "gross_pay": "640.00", "taxes": "94.37", "deductions": "186.64", "net_pay": "359.09", "payment_date": "07/05/2023" }
+    ]
+}

@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="admin-controller">
+  <div class="container mt-5">
+    <h1 class="text-center">Leave Requests</h1>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Description</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Status</th>
+        <th scope="col">Approve</th>
+        <th scope="col">Reject</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let leaveRequest of leaveRequests; index as i">
+        <td>{{ leaveRequest.employee_name }}</td>
+        <td>{{ leaveRequest.type }}</td>
+        <td>{{ leaveRequest.description }}</td>
+        <td>{{ leaveRequest.start_date }}</td>
+        <td>{{ leaveRequest.end_date }}</td>
+        <td>{{ leaveRequest.status }}</td>
+        <td><button class="btn btn-sm btn-success">Approve</button></td>
+        <td><button class="btn btn-sm btn-danger">Reject</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

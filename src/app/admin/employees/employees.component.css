@@ -1,0 +1,9 @@
+.admin-container {
+    min-width: 100%;
+    min-height: calc(100vh - 260px);
+    display: flex;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif
+}

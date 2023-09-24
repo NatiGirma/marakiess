@@ -1,0 +1,109 @@
+<app-header></app-header>
+
+<div class="container">
+  <h3 class="text-center mt-5">Leave Requests</h3>
+  <p class="text-center">
+    <button class="btn btn-custom mt-1" (click)="open(content)">
+      New Leave Request
+    </button>
+  </p>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"></h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input
+          type="description"
+          name="description"
+          id="description"
+          class="form-control"
+          placeholder="description..."
+          [(ngModel)]="description"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="leave_type" class="form-label">Leave Type</label>
+        <select
+          name="leave_type"
+          id="leave_type"
+          [(ngModel)]="leave_type"
+          class="form-control"
+        >
+          <option value="">Select Leave Type</option>
+          <option value="official_absence">Official Absence</option>
+          <option value="leave_without_pay">Leave Without Pay</option>
+          <option value="family_visit">Family Visit</option>
+          <option value="bereavement">Bereavement</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="from" class="form-label">From</label>
+        <input
+          type="date"
+          name="from"
+          id="from"
+          class="form-control"
+          [(ngModel)]="from"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="to" class="form-label">To</label>
+        <input
+          type="date"
+          name="to"
+          id="to"
+          class="form-control"
+          [(ngModel)]="to"
+        />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="submitLeaveRequest()"
+    >
+      Submit
+    </button>
+  </div>
+</ng-template>
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+        <th scope="col">Description</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let leaveRequest of leaveRequests; index as i">
+        <td>{{ leaveRequest.type }}</td>
+        <td>{{ leaveRequest.description }}</td>
+        <td>{{ leaveRequest.start_date }}</td>
+        <td>{{ leaveRequest.end_date }}</td>
+        <td>{{ leaveRequest.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

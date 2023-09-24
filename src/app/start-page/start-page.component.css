@@ -1,0 +1,25 @@
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0A2E59;
+}
+
+.user-type {
+    border-radius: 5px;
+    height: 200px;
+    background-color: #0A2E59;
+    transition: 0.3s ease-in-out;
+}
+
+.user-type:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.user-type img {
+    width: 70px;
+    height: 70px;
+}
+
+.user-type p {
+    margin-top: 20px;
+    color: #FFF;
+}
